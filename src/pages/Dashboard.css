@@ -1,0 +1,168 @@
+/* Base styles */
+.dashboard {
+  padding: 20px;
+}
+
+.add-button {
+  background-color: blue;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dashboard h1 {
+  font-family: 'Poppins', sans-serif;
+}
+
+.dashboard-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.dashboard-table th, .dashboard-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.dashboard-table th {
+  background-color: black;
+  color: white;
+}
+
+.dashboard-img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border: 1px solid #ddd;
+}
+
+.update-button {
+  background-color: blue;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.delete-button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Form styles */
+.add-form {
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.add-form input {
+  display: block;
+  margin-bottom: 10px;
+  padding: 8px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.add-form button {
+  margin-right: 10px;
+  padding: 8px 16px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .dashboard {
+    padding: 10px;
+  }
+
+  .add-button,
+  .update-button,
+  .delete-button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .dashboard-table,
+  .dashboard-table thead,
+  .dashboard-table tbody,
+  .dashboard-table th,
+  .dashboard-table td,
+  .dashboard-table tr {
+    display: block;
+    width: 100%;
+  }
+
+  .dashboard-table thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  .dashboard-table tr {
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+
+  .dashboard-table td {
+    border: none;
+    position: relative;
+    padding-left: 50%;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .dashboard-table td:before {
+    position: absolute;
+    top: 50%;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+    transform: translateY(-50%);
+    font-weight: bold;
+    content: attr(data-label);
+  }
+
+  .dashboard-img {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ddd;
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboard {
+    padding: 5px;
+  }
+
+  .add-button,
+  .update-button,
+  .delete-button {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .dashboard-img {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ddd;
+  }
+
+  .dashboard-table td {
+    padding-left: 40%;
+  }
+
+  .dashboard-table td:before {
+    left: 5px;
+  }
+}
