@@ -12,7 +12,7 @@ function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-light">
       <div className="container">
-        <a className="navbar-brand" href="#">
+        <a className="navbar-brand" href="https://example.com">
           <img
             src="imgs/logo.png"
             alt="Logo"
@@ -55,12 +55,12 @@ function Navbar() {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/Dashboard" target="_blank">
+              <a className="nav-link" href="/Dashboard" target="_blank" rel="noreferrer">
                 DASHBOARD
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <a className="nav-link" href="https://example.com">
                 <i className="bi bi-search" />
               </a>
             </li>

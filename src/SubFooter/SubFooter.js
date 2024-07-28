@@ -12,20 +12,20 @@ function SubFooter() {
           <p>© 2024 Lawliet. All rights reserved.</p>
         </div>
         <div className="col-md-6 text-end">
-          <a href="https://instagram.com" target="_blank">
+          <a href="https://instagram.com" target="_blank" rel="noreferrer">
             <img
               src="imgs/instaa.png"
               alt="instagram"
               className="social-icon"
             />
           </a>
-          <a href="https://google.com" target="_blank">
+          <a href="https://google.com" target="_blank" rel="noreferrer">
             <img src="imgs/browser.png" alt="browser" className="social-icon" />
           </a>
-          <a href="https://twitter.com" target="_blank">
+          <a href="https://twitter.com" target="_blank" rel="noreferrer">
             <img src="imgs/twitter.png" alt="twitter" className="social-icon" />
           </a>
-          <a href="https://youtube.com" target="_blank">
+          <a href="https://youtube.com" target="_blank" rel="noreferrer">
             <img src="imgs/youtube.png" alt="youtube" className="social-icon" />
           </a>
         </div>

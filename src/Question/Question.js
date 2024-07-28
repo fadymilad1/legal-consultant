@@ -15,7 +15,7 @@ function Question() {
             send you a couple options in 24 hours. You can have free consult, if
             our first customer
           </p>
-          <a href="#" className="btn btn-secondary btn-lg mb-5">
+          <a href="https://example.com" className="btn btn-secondary btn-lg mb-5">
             <img
               src="imgs/call.png"
               alt="call now"
