@@ -53,6 +53,12 @@ const Dashboard = ({ data, onUpdate, onDelete, onAdd }) => {
     setIsEditing(null);
   };
 
+  const handleDelete = (id) => {
+    if (window.confirm('Are you sure you want to delete this item?')) {
+      onDelete(id);
+    }
+  };
+
   const renderStars = (rating) => {
     const maxRating = 5;
     const limitedRating = Math.min(rating, maxRating);
@@ -151,7 +157,7 @@ const Dashboard = ({ data, onUpdate, onDelete, onAdd }) => {
                   <td data-label="Name">{item.name}</td>
                   <td data-label="Job Title">{item.jobTitle}</td>
                   <td data-label="Update"><button className="update-button" onClick={() => handleEdit(item)}>Update</button></td>
-                  <td data-label="Delete"><button className="delete-button" onClick={() => onDelete(item.id)}>Delete</button></td>
+                  <td data-label="Delete"><button className="delete-button" onClick={() => handleDelete(item.id)}>Delete</button></td>
                 </>
               )}
             </tr>

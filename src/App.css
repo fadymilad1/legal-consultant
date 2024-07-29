@@ -33,10 +33,6 @@ body {
   text-align: left;
 }
 
-.navbar-nav .nav-item:first-child {
-  margin-left: 0;
-}
-
 .navbar {
   margin-bottom: 8rem;
 }
@@ -52,28 +48,19 @@ body {
   text-align: left;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 .nav-item {
   border: none !important;
 }
 
 .display-6 {
-  width: 800px;
-  height: 216px;
-  top: 250px;
-  left: 161px;
-  gap: 0px;
-  opacity: 0px;
   font-family: 'Playfair Display';
-  font-size: 77px;
+  font-size: 75px;
   font-weight: 700;
   line-height: 108px;
   letter-spacing: 0.02em;
   text-align: left;
   color: #094B72;
+  min-width: 700px;
 }
 
 .lead {
@@ -110,19 +97,10 @@ html {
 
 
 @media (max-width: 767.98px) {
-  html {
-    scroll-behavior: smooth;
-  }
-
-  .navbar-collapse .nav-item+.nav-item {
-    border-top: 1px solid #ddd;
-  }
-
   .display-6 {
     font-size: 2.5rem;
     text-align: center;
-    width: auto;
-    height: auto;
+    min-width: 8px;
   }
 
   .col-md-5 {
@@ -153,21 +131,10 @@ html {
     display: none;
   }
   
-  .stats-item h1 {
-    font-size: 3rem;
-    color: #FFFFFF;
-    margin-bottom: 0.5rem;
-    font-family: 'Poppins' sans-serif;
-    font-size: 48px;
-    font-weight: 800;
-    line-height: 64px;
-    text-align: center;
-  }
    .custom-prev,
    .custom-next {
       display: none;
   }
-
 }
 
 .custom-badge {
@@ -226,8 +193,6 @@ html {
 .trusted-companies {
   width: 100%;
   margin-top: 5rem;
-  gap: 0px;
-  opacity: 1;
   font-family: 'Plus Jakarta Sans';
   font-size: 20px;
   font-weight: 400;
@@ -354,10 +319,9 @@ html {
 }
 
 .stats-item h1 {
-  font-size: 3rem;
   color: #FFFFFF;
   margin-bottom: 0.5rem;
-  font-family: 'Poppins' sans-serif;
+  font-family: 'Poppins';
   font-size: 48px;
   font-weight: 800;
   line-height: 64px;
@@ -386,13 +350,6 @@ html {
   border: 1px solid #ffffffcb
 }
 
-.stats-item:nth-child(2) .divider:first-child {
-  left: 0;
-}
-
-.stats-item:nth-child(2) .divider:last-child {
-  right: 0;
-}
 .testimonial-header {
   font-family: 'Playfair Display', serif;
   font-size: 48px;
@@ -432,8 +389,6 @@ html {
 .testimonial-image {
   width: 56px;
   height: 56px;
-  gap: 0px;
-  opacity: 1;
 }
 
 .owl-carousel .owl-item img {
@@ -594,7 +549,7 @@ html {
 }
 
 .footer-section a:hover {
-  color: #E7F6FF;
+  color: #94a1a8;
 }
 
 .footer-section .row div {
